@@ -1,3 +1,23 @@
-h1.title{
-  color: white;
-  }
+body {
+	font-family: 'Lato', sans-serif;
+	color: #747704;
+	font-weight: 300;
+}
+
+/*anything starting with a dot is essentially a function*/
+
+.text-muted { /*function to mute text*/
+	color: #BCBBBB;
+}
+
+.text-thin { /*function to thin text*/
+	font-weight: 100;
+}
+
+.title-super { /*function to enlarge text to 60 pixels*/
+	font-size: 60px;
+}
+
+.title-logo { /*function to increase margin of logo from the edge (to 20 pixels)*/
+	margin: 20px;
+}
