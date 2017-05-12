@@ -1,18 +1,111 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">  <!-- character set -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- force browser to use best version -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>LOL</title>  <!-- title of page on tab -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">  <!-- font of webpage -->
+		<link rel="stylesheet" href="css/mainBootstrap.css">  <!-- link to bootstrap to use features -->
+		<link rel="stylesheet" href="css/mainStyles.css">  <!-- link to CSS file to use features -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>  <!-- link to jQuery file to use features -->
+    	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container"> <!-- contains entire page -->
+			<div class="row"> <!-- row A -->
+				<div class="col-md-6"> <!-- col A1 (dell logo) -->
+					<img class="title-logo" src="http://www.vistaar.com/wp-content/uploads/2011/05/dell-logo-100X100.gif" class="img-responsive">
+				</div>
+				<div class="col-md-6 text-right text-uppercase"> <!-- col A2 (jane) -->
+					<h1 class="title-super text-thin">Jane Doette</h1>
+					<h4>Front-End Ninja</h4>
+				</div>
+			</div>
+			<div class="row"> <!-- row B -->
+				<div class="col-md-12"> <!-- col B (seperator)-->
+					<hr>
+				</div>
+			</div>
+			<div class="row">  <!-- row C-->
+				<div class="col-md-12"> <!-- col C (trump) -->
+					<img src="http://www.thesiouxempire.com/wp-content/uploads/2017/02/img_4405-1140x350.jpg" class="img-responsive">
+				</div>
+			</div>
+			<div class="row"> <!-- row D -->
+				<div class="col-md-12 text-left"> <!-- col D (Featured Work text) -->
+					<h2 class="text-muted">Featured Work</h2>
+				</div>
+			</div>
+			<div class="row text-center"> <!-- row E -->
+				<div class="col-md-4"> <!-- col E1 (memeburn pic) -->
+					<img src="http://iabdigitalsummit.titan.caxton.co.za/wp-content/uploads/sites/18/2017/02/memeburn.jpg" class="img-responsive" data-toggle="modal" data-target="#project1"> <!-- data-toggle and data-target have to do with javascript stuff (the dropdown menu) -->
+					<h3 class="text-uppercase">TEST1</h3>
+					<p>http://github.com/udacity/appify</p>
+				</div>
+				<div class="col-md-4"> <!-- col E2 (what do you meme) -->
+					<img src="https://s3.amazonaws.com/files.thegamecrafter.com/1a728f46a7d073ff93906a463b7912505cf24dfb" class="img-responsive" data-toggle="modal" data-target="#project2">
+					<h3 class="text-uppercase">TEST2</h3>
+					<p><a href="https://www.reddit.com/r/dankmemes/">This is how you link to a project</a></p>
+				</div>
+				<div class="col-md-4"> <!-- col E3 (mcdonald meme) -->
+					<img src="http://www.grumblemagazine.com/articles/tesseract/monoculture-header.gif" class="img-responsive" data-toggle="modal" data-target="#project3">
+					<h3 class="text-uppercase">TEST3</h3>
+					<p>http://github.com/udacity/bokeh</p>
+				</div>
+			</div>
+		</div>
 
-<head>
+	<!-- Modal --> 	<!-- creates a dropdown screen when you click on an image -->
 
-  <title> MAIN PAGE </title>
-<link rel="stylesheet" type="text/css" href="css/mainStyles.css"/>
-  
-</head>
-
-
-<body>
-  <h1 class ="title">MAIN PAGE</h1>
-  <a href = "https://farzan-nadeem.github.io/Team17/RoadKill.html">Roadkill</a>
-  
- </body>
- 
- </html>
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">testing1</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://iabdigitalsummit.titan.caxton.co.za/wp-content/uploads/sites/18/2017/02/memeburn.jpg">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+    <!-- Button Modal -->
+    <button type="button" class="btn btn-default" data-dismiss="modal">Boy Bye</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">testing2</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://iabdigitalsummit.titan.caxton.co.za/wp-content/uploads/sites/18/2017/02/memeburn.jpg">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Bye Felicia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">testing3</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://iabdigitalsummit.titan.caxton.co.za/wp-content/uploads/sites/18/2017/02/memeburn.jpg">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">L8r M8</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	</body>
+</html>
